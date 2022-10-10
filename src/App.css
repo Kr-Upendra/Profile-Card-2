@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+:root {
+  --fontFamily: "Inter", sans-serif;
+  --titleFSize: 25px;
+  --professionFSize: 12.5px;
+  --professionClr: #f3bf99;
+  --headingClr: #ffffff;
+  --websiteClr: #f5f5f5;
+  --websiteFSize: 10.25px;
+  --btnFSize: 14px;
+  --btnClr: #374151;
+  --heading2FSize: 16px;
+  --iconBClr: #918e9b;
+  --textClr: #dcdcdc;
+  --cardBGClr: #1a1b21;
+  --emailIconClr: #1e1f26;
+  --cardContainerBgClr: #23252c;
+  --footerClr: #161619;
+  --emailTextClr: #8080804c;
+  --bodyBackgroundClr: #1c1c1c;
+  --border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bodyBackgroundClr);
+  font-size: 62.5%;
+  padding: 4rem;
+}
+
+.container {
+  border: var(--border);
+}

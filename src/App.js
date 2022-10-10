@@ -1,9 +1,11 @@
 import React from "react";
+import "./App.css";
+import Info from "./components/Info";
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello world!</h1>
+    <div className="container">
+      <Info />
     </div>
   );
 }
