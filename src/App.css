@@ -5,7 +5,7 @@
   --titleFSize: 25px;
   --professionFSize: 12.5px;
   --professionClr: #f3bf99;
-  --headingClr: #ffffff;
+  --whiteClr: #ffffff;
   --websiteClr: #f5f5f5;
   --websiteFSize: 10.25px;
   --btnFSize: 14px;
@@ -17,7 +17,7 @@
   --emailIconClr: #1e1f26;
   --cardContainerBgClr: #23252c;
   --footerClr: #161619;
-  --emailTextClr: #8080804c;
+  --emailTextClr: #374151;
   --bodyBackgroundClr: #1c1c1c;
   --border: 1px solid red;
 }
@@ -28,12 +28,107 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--bodyBackgroundClr);
   font-size: 62.5%;
   padding: 4rem;
+  font-family: var(--fontFamily);
+  letter-spacing: 1px;
 }
 
 .container {
-  border: var(--border);
+  background-color: var(--cardContainerBgClr);
+  max-width: 500px;
+  padding: 2rem 3rem;
+  border: 0.3rem;
+}
+
+.card {
+  margin: 0 auto;
+  width: 250px;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  background-color: var(--cardBGClr);
+}
+
+.header {
+  text-align: center;
+}
+
+.header__img img {
+  width: 249px;
+  margin-bottom: 1rem;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+}
+
+.header__names h2 {
+  color: var(--whiteClr);
+  font-size: var(--titleFSize);
+}
+
+.header__names span {
+  display: block;
+  font-size: var(--professionFSize);
+  color: var(--professionClr);
+  margin: 0.1rem 0;
+  margin-bottom: 0.4rem;
+}
+
+.header__names a {
+  font-size: var(--websiteFSize);
+  color: var(--websiteClr);
+}
+
+.header__btns {
+  margin: 1rem 0.4rem 1rem 0.4rem;
+  display: inline-block;
+  width: 90px;
+}
+
+.header__btns a {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.3rem;
+  font-size: var(--btnFSize);
+  font-family: var(--fontFamily);
+  letter-spacing: 0;
+  color: var(--btnClr);
+  justify-content: center;
+  border-radius: 0.3rem;
+  background-color: var(--whiteClr);
+}
+
+.header__btns a[href="/linkedin"] {
+  background-color: #5093e2;
+  color: var(--whiteClr);
+}
+
+.header__btns a img {
+  width: 16px;
+  margin-right: 0.3rem;
+}
+
+.header__btns a img[alt="linkedin"] {
+  filter: invert(10);
+}
+
+.aboutInterests {
+  padding: 0.7rem 1.7rem 1rem;
+}
+
+.aboutInterests h3 {
+  font-size: var(--heading2FSize);
+  color: var(--whiteClr);
+  margin-bottom: 0.5rem;
+}
+
+.aboutInterests p {
+  font-size: var(--websiteFSize);
+  color: var(--textClr);
+  letter-spacing: 0;
 }
